@@ -1,3 +1,10 @@
+## [8.0.3](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v8.0.2...v8.0.3) (2026-09-13)
+
+### Bug Fixes
+
+* **re:** correct BSTSmallSharedArray::empty() ([b059ce1](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/b059ce132631eeba20d1f628904c0c80e48209c3))
+* **re:** correct BSTSmallSharedArray::empty() ([4f491e0](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/4f491e070bc06870270c30cf2f41643d178e7d55))
+
 ## [8.0.2](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v8.0.1...v8.0.2) (2026-09-13)
 
 ### Bug Fixes
