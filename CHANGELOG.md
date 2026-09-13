@@ -1,3 +1,10 @@
+## [8.0.2](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v8.0.1...v8.0.2) (2026-09-13)
+
+### Bug Fixes
+
+* **skse:** set V5 flag in plugin declarations ([ccf0daa](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/ccf0daae14ef80051cf6a09bd78163334d48654b))
+* **skse:** set V5 flag in plugin declarations ([bcd0eea](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/bcd0eea65143ec1e859009fbe6c47e273178043b))
+
 ## [8.0.1](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v8.0.0...v8.0.1) (2026-09-13)
 
 ### Bug Fixes
