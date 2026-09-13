@@ -1,3 +1,33 @@
+## [8.0.0](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v7.5.2...v8.0.0) (2026-09-13)
+
+### ⚠ BREAKING CHANGES
+
+* **re:** Consolidates duplicate BSShaderAccumulator declarations. To migrate:
+- Replace `#include "RE/S/ShaderAccumulator.h"` with `#include "RE/B/BSShaderAccumulator.h"`.
+- Rename `FinishAccumulatingPreResolveDepth` call sites to `FinishAccumulatingDispatch`.
+- Access accumulator flags (`firstPerson`, `drawDecals`) via `GetRuntimeFlags()` instead of `GetRuntimeData()`.
+- Use `GetFlatRuntimeData()` or `GetVRRuntimeData()` for runtime-specific fields prior to the shared render-state tail.
+- Cast or use the scoped `RENDER_MODE` enum when comparing `renderMode`.
+
+Co-authored-by: Claude Code <noreply@anthropic.com>
+
+### Features
+
+* **rex:** add a REX::W32 to SDK type bridge ([#352](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/352)) ([80bf621](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/80bf62138fc7ab94195bbe84610a3e0edeffbfc0))
+
+### Bug Fixes
+
+* **AE:** correct PlayerCharacter 1.7.x accessors ([#343](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/343)) ([15c399d](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/15c399d7fb22d70706303066f471618022cf4baa))
+* **input:** correct cached button event layout ([#347](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/347)) ([2994ab4](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/2994ab4f614dcbc69eaedc091da5c6c6e7bcaa78))
+* **input:** correct cached event array offsets ([#348](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/348)) ([0db97a2](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/0db97a2dbb8ed5eaa8e8ee4fd0b058dbc6bc613b))
+* **NiSkinData:** make accessors public ([#349](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/349)) ([2515f86](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/2515f86d1c7afca159653681eb675eedcc39e024))
+* **vr:** correct NiCamera runtime offset ([#353](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/353)) ([c919ccc](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/c919cccd978e3e7c45208ea329cce5004c681262))
+* **xmake:** define multi-runtime targeting ([38db109](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/38db109bdc8836850ec0df1840f751226d6a0aa2))
+
+### Code Refactoring
+
+* **re:** consolidate BSShaderAccumulator ([#332](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/332)) ([38e6399](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/38e6399e56d6b3c297183a2b135818257949a474))
+
 ## [8.0.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v7.5.4...v8.0.0) (2026-09-12)
 
 ### ⚠ BREAKING CHANGES
