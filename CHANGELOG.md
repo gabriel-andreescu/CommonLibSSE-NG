@@ -1,3 +1,10 @@
+## [8.0.1](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v8.0.0...v8.0.1) (2026-09-13)
+
+### Bug Fixes
+
+* **xmake:** enable patch-site diagnostics ([591ca9c](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/591ca9c93db8fc47cf466d6a0649c9e2336c7cf8)), closes [#232](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/232)
+* **xmake:** integrate patch-site diagnostics ([a6bd28b](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/a6bd28bc6168a9d69548135e933ceaf849114597))
+
 ## [8.0.0](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v7.5.2...v8.0.0) (2026-09-13)
 
 ### ⚠ BREAKING CHANGES
