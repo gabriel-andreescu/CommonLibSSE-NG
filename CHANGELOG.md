@@ -1,53 +1,12 @@
-## [8.0.3](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v8.0.2...v8.0.3) (2026-09-13)
+## [8.0.1](https://github.com/alandtse/CommonLibSSE-NG/compare/v8.0.0...v8.0.1) (2026-09-13)
 
 ### Bug Fixes
 
-* **re:** correct BSTSmallSharedArray::empty() ([b059ce1](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/b059ce132631eeba20d1f628904c0c80e48209c3))
-* **re:** correct BSTSmallSharedArray::empty() ([4f491e0](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/4f491e070bc06870270c30cf2f41643d178e7d55))
-
-## [8.0.2](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v8.0.1...v8.0.2) (2026-09-13)
-
-### Bug Fixes
-
-* **skse:** set V5 flag in plugin declarations ([ccf0daa](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/ccf0daae14ef80051cf6a09bd78163334d48654b))
-* **skse:** set V5 flag in plugin declarations ([bcd0eea](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/bcd0eea65143ec1e859009fbe6c47e273178043b))
-
-## [8.0.1](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v8.0.0...v8.0.1) (2026-09-13)
-
-### Bug Fixes
-
-* **xmake:** enable patch-site diagnostics ([591ca9c](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/591ca9c93db8fc47cf466d6a0649c9e2336c7cf8)), closes [#232](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/232)
-* **xmake:** integrate patch-site diagnostics ([a6bd28b](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/a6bd28bc6168a9d69548135e933ceaf849114597))
-
-## [8.0.0](https://github.com/gabriel-andreescu/CommonLibSSE-NG/compare/v7.5.2...v8.0.0) (2026-09-13)
-
-### ⚠ BREAKING CHANGES
-
-* **re:** Consolidates duplicate BSShaderAccumulator declarations. To migrate:
-- Replace `#include "RE/S/ShaderAccumulator.h"` with `#include "RE/B/BSShaderAccumulator.h"`.
-- Rename `FinishAccumulatingPreResolveDepth` call sites to `FinishAccumulatingDispatch`.
-- Access accumulator flags (`firstPerson`, `drawDecals`) via `GetRuntimeFlags()` instead of `GetRuntimeData()`.
-- Use `GetFlatRuntimeData()` or `GetVRRuntimeData()` for runtime-specific fields prior to the shared render-state tail.
-- Cast or use the scoped `RENDER_MODE` enum when comparing `renderMode`.
-
-Co-authored-by: Claude Code <noreply@anthropic.com>
-
-### Features
-
-* **rex:** add a REX::W32 to SDK type bridge ([#352](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/352)) ([80bf621](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/80bf62138fc7ab94195bbe84610a3e0edeffbfc0))
-
-### Bug Fixes
-
-* **AE:** correct PlayerCharacter 1.7.x accessors ([#343](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/343)) ([15c399d](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/15c399d7fb22d70706303066f471618022cf4baa))
-* **input:** correct cached button event layout ([#347](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/347)) ([2994ab4](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/2994ab4f614dcbc69eaedc091da5c6c6e7bcaa78))
-* **input:** correct cached event array offsets ([#348](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/348)) ([0db97a2](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/0db97a2dbb8ed5eaa8e8ee4fd0b058dbc6bc613b))
-* **NiSkinData:** make accessors public ([#349](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/349)) ([2515f86](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/2515f86d1c7afca159653681eb675eedcc39e024))
-* **vr:** correct NiCamera runtime offset ([#353](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/353)) ([c919ccc](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/c919cccd978e3e7c45208ea329cce5004c681262))
-* **xmake:** define multi-runtime targeting ([38db109](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/38db109bdc8836850ec0df1840f751226d6a0aa2))
-
-### Code Refactoring
-
-* **re:** consolidate BSShaderAccumulator ([#332](https://github.com/gabriel-andreescu/CommonLibSSE-NG/issues/332)) ([38e6399](https://github.com/gabriel-andreescu/CommonLibSSE-NG/commit/38e6399e56d6b3c297183a2b135818257949a474))
+* **AE:** add missing id for ObjectTypeInfo::ReleaseData ([#359](https://github.com/alandtse/CommonLibSSE-NG/issues/359)) ([bbd0d3f](https://github.com/alandtse/CommonLibSSE-NG/commit/bbd0d3f452575ba310757b141537e8ecc8cf4a78))
+* **re:** correct BSTSmallSharedArray::empty() ([#361](https://github.com/alandtse/CommonLibSSE-NG/issues/361)) ([fd13f06](https://github.com/alandtse/CommonLibSSE-NG/commit/fd13f062878cfb4145dbb2be76485b482eff5831))
+* **skse:** set V5 flag in plugin declarations ([#360](https://github.com/alandtse/CommonLibSSE-NG/issues/360)) ([98c8df0](https://github.com/alandtse/CommonLibSSE-NG/commit/98c8df05f1c05915b16af45181c7638ef925f465)), closes [#310](https://github.com/alandtse/CommonLibSSE-NG/issues/310)
+* **xmake:** define multi-runtime targeting ([#357](https://github.com/alandtse/CommonLibSSE-NG/issues/357)) ([d8d560d](https://github.com/alandtse/CommonLibSSE-NG/commit/d8d560d44f0a0bbcb0a489c7679adb7c65744c49))
+* **xmake:** enable patch-site diagnostics ([#358](https://github.com/alandtse/CommonLibSSE-NG/issues/358)) ([770dc12](https://github.com/alandtse/CommonLibSSE-NG/commit/770dc1210dff859ee2aec2840b7e58ff4c92e109)), closes [#232](https://github.com/alandtse/CommonLibSSE-NG/issues/232)
 
 ## [8.0.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v7.5.4...v8.0.0) (2026-09-12)
 
