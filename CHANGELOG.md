@@ -1,3 +1,64 @@
+## [9.0.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v8.4.1...v9.0.0) (2026-09-21)
+
+### ⚠ BREAKING CHANGES
+
+* **HitData:** RE::HitData members at 0x74-0x7C are renamed to match
+what the engine stores there; the layout and sizeof are unchanged.
+Migrate as follows:
+
+criticalDamageMult (0x7C) is removed and was actually reflectedDamage
+(0x7C). It holds reflected melee damage, not a crit multiplier.
+reflectedDamage (0x78) is now pushBack (0x78), a knockback force.
+pushBack (0x74) is now unk74.
+For crits, test HitData::Flag::kCritical. The crit bonus is a flat
+value already included in totalDamage and physicalDamage.
+
+### Bug Fixes
+
+* correct GetWaterFogPassList return type ([#373](https://github.com/alandtse/CommonLibSSE-NG/issues/373)) ([3e6ac85](https://github.com/alandtse/CommonLibSSE-NG/commit/3e6ac85263ac0fba608705ecd40765616a5dff79))
+* **HitData:** correct members at 0x74-0x7C ([#374](https://github.com/alandtse/CommonLibSSE-NG/issues/374)) ([a530b29](https://github.com/alandtse/CommonLibSSE-NG/commit/a530b2975417e25c06b1972757fc2a3ee48e2865))
+
+## [8.4.1](https://github.com/alandtse/CommonLibSSE-NG/compare/v8.4.0...v8.4.1) (2026-09-20)
+
+### Bug Fixes
+
+* **batchrenderer:** make SetupAndDrawPass static ([#372](https://github.com/alandtse/CommonLibSSE-NG/issues/372)) ([024eb91](https://github.com/alandtse/CommonLibSSE-NG/commit/024eb91a231043bc6187ae8597b28f8ddeb467b0))
+
+## [8.4.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v8.3.0...v8.4.0) (2026-09-20)
+
+### Features
+
+* **batchrenderer:** add ClearAllRenderPasses ([#371](https://github.com/alandtse/CommonLibSSE-NG/issues/371)) ([0c02d8b](https://github.com/alandtse/CommonLibSSE-NG/commit/0c02d8bf4f404605182032b0fd4ee1678e87e94e))
+
+## [8.3.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v8.2.0...v8.3.0) (2026-09-19)
+
+### Features
+
+* `RE::BSScript::Object::~Object` impl ([#366](https://github.com/alandtse/CommonLibSSE-NG/issues/366)) ([53f4a56](https://github.com/alandtse/CommonLibSSE-NG/commit/53f4a561a953fef2cd792d271a631e6ac66a2d43))
+* **CombatProjectileAimController:** name fields ([#370](https://github.com/alandtse/CommonLibSSE-NG/issues/370)) ([f643c41](https://github.com/alandtse/CommonLibSSE-NG/commit/f643c41b85272e672773bbb4c40c5964d6e8ac9b))
+
+### Bug Fixes
+
+* **niskindata:** keep GetBoneData private ([#369](https://github.com/alandtse/CommonLibSSE-NG/issues/369)) ([e1702ad](https://github.com/alandtse/CommonLibSSE-NG/commit/e1702adb508eca8babcb87b183157da7a6b8b0c7))
+
+## [8.2.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v8.1.0...v8.2.0) (2026-09-18)
+
+### Features
+
+* **actor:** add CombatProjectileAimController ([#368](https://github.com/alandtse/CommonLibSSE-NG/issues/368)) ([8bed776](https://github.com/alandtse/CommonLibSSE-NG/commit/8bed7767fd1b764e674ead359c05fe7e03d710d2))
+
+### Bug Fixes
+
+* **papyrus:** invoke latent return type mapper ([#364](https://github.com/alandtse/CommonLibSSE-NG/issues/364)) ([9b19e69](https://github.com/alandtse/CommonLibSSE-NG/commit/9b19e695a4a7277f7e0059261be8655ce7781219))
+* **vr:** expose inventory-preview array layout ([#367](https://github.com/alandtse/CommonLibSSE-NG/issues/367)) ([4adaaae](https://github.com/alandtse/CommonLibSSE-NG/commit/4adaaaebdc2b026879b2903c68b15fbcfa5ca4ad))
+* **vr:** expose RaceSexMenu runtime data ([#363](https://github.com/alandtse/CommonLibSSE-NG/issues/363)) ([a6af562](https://github.com/alandtse/CommonLibSSE-NG/commit/a6af562bba4f0b8255ab2237013e85ff7f4ac3f5))
+
+## [8.1.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v8.0.1...v8.1.0) (2026-09-16)
+
+### Features
+
+* **gfx:** add GFxCharEvent layout ([#362](https://github.com/alandtse/CommonLibSSE-NG/issues/362)) ([7ffe4f1](https://github.com/alandtse/CommonLibSSE-NG/commit/7ffe4f19ac3d2a294da95690bacfee99ec60e13d))
+
 ## [8.0.1](https://github.com/alandtse/CommonLibSSE-NG/compare/v8.0.0...v8.0.1) (2026-09-13)
 
 ### Bug Fixes
