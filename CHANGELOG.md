@@ -1,3 +1,48 @@
+## [10.0.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v9.3.0...v10.0.0) (2026-09-28)
+
+### ⚠ BREAKING CHANGES
+
+* **package:** CreatePackage and SetPackType take PACKAGE_TYPE. Callers
+passing PACKAGE_PROCEDURE_TYPE no longer compile; each such call passed a
+value the engine reads as a different package type.
+
+Co-authored-by: Claude Opus 5.5 (1M context) <noreply@anthropic.com>
+
+### Bug Fixes
+
+* **magic:** return the actor from GetTargetActor ([#382](https://github.com/alandtse/CommonLibSSE-NG/issues/382)) ([8702dcf](https://github.com/alandtse/CommonLibSSE-NG/commit/8702dcfd4d7445c0b3ceddee1668eb3edac3f58a))
+* **package:** CreatePackage takes PACKAGE_TYPE ([#383](https://github.com/alandtse/CommonLibSSE-NG/issues/383)) ([2184d3f](https://github.com/alandtse/CommonLibSSE-NG/commit/2184d3f3d9abf6ccde5b41e75ddbd415d0b9cc28))
+
+## [9.3.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v9.2.0...v9.3.0) (2026-09-28)
+
+### Features
+
+* fix NiSkinInstance::Create, add Dismember ([#384](https://github.com/alandtse/CommonLibSSE-NG/issues/384)) ([c23f062](https://github.com/alandtse/CommonLibSSE-NG/commit/c23f062b2c02e86b381408f80ecc89caa473fc66))
+
+## [9.2.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v9.1.0...v9.2.0) (2026-09-27)
+
+### Features
+
+* **state:** add BuildCameraStateData ([#379](https://github.com/alandtse/CommonLibSSE-NG/issues/379)) ([ee6ebeb](https://github.com/alandtse/CommonLibSSE-NG/commit/ee6ebeb02a4575670015e19fe51992b7146145c7))
+
+## [9.1.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v9.0.2...v9.1.0) (2026-09-24)
+
+### Features
+
+* **actor:** add ChangeHeadPart wrapper ([#375](https://github.com/alandtse/CommonLibSSE-NG/issues/375)) ([3ed84ea](https://github.com/alandtse/CommonLibSSE-NG/commit/3ed84ea498d915071659b1c0d6fdf7bab9da6345))
+
+## [9.0.2](https://github.com/alandtse/CommonLibSSE-NG/compare/v9.0.1...v9.0.2) (2026-09-24)
+
+### Bug Fixes
+
+* **shadowstate:** fix constant offset type ([#378](https://github.com/alandtse/CommonLibSSE-NG/issues/378)) ([244562f](https://github.com/alandtse/CommonLibSSE-NG/commit/244562f77935996a184614896c16bc1f8cfcbdb5))
+
+## [9.0.1](https://github.com/alandtse/CommonLibSSE-NG/compare/v9.0.0...v9.0.1) (2026-09-23)
+
+### Bug Fixes
+
+* **actor:** correct GetCurrentAmmo dispatch ([#377](https://github.com/alandtse/CommonLibSSE-NG/issues/377)) ([33e6a96](https://github.com/alandtse/CommonLibSSE-NG/commit/33e6a966001d8c86e52be6e2b38262e6c346353e))
+
 ## [9.0.0](https://github.com/alandtse/CommonLibSSE-NG/compare/v8.4.1...v9.0.0) (2026-09-21)
 
 ### ⚠ BREAKING CHANGES
